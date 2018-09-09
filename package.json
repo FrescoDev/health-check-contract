@@ -1,0 +1,32 @@
+{
+  "name": "health-check-contract",
+  "version": "1.0.0",
+  "description": "a simple health check endpoint",
+  "main": "logic.js",
+  "contract": {
+    "id": "id",
+    "name": "health check endpoint",
+    "when": "an HTTP request is sent",
+    "at_path": "/health",
+    "with_method": "GET"
+  },
+  "tags": [
+    "health check",
+    "health"
+  ],
+  "scripts": {
+    "build": "node node_modules/niobi-localhost/build-contract.js",
+    "local": "node node_modules/niobi-localhost"
+  },
+  "author": "niobi",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "cucumber": "^4.2.1",
+    "supertest": "^3.1.0",
+    "expect": "^23.5.0",
+    "nodemon": "^1.18.3",
+    "niobi-localhost": "0.0.4"
+  },
+  "dependencies": {
+  }
+}
